@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(170, 8, 8);
+          
+        }
+        h1{
+            color: blanchedalmond;
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+            color: rgb(194, 213, 235);
+            font: 400 ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-shadow: 0.1em 0.1em 0.2em rgb(73, 67, 67);
+            text-align: center;
+            text-decoration: dashed;
+            
+               
+
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Aula de Javascript!</h1>
+    <h2>
+
+    <script>
+       var nome = window.prompt('Qual o seu nome?')
+       var SobNome = window.prompt('Qual o seu Sobrenome?')
+       var NomeComp = nome +' '+ SobNome
+       window.alert(`Sejá bem vindo ${nome} !`)
+       var idade = window.prompt('Qual a sua idade?')
+       window.alert(`${nome} você tem  ${idade} anos, correto?`)
+       window.alert(`${nome} você sabia que o seu nome tem ${NomeComp.length} letras?`)
+       var somaNo = NomeComp.length
+       var somaNoId = parseInt(somaNo) + parseInt(idade)
+       var parci = parseInt(somaNoId) / parseInt(2)
+       var death = parseInt(parci) + parseInt(10)
+       window.alert(`Outra curiosidade sobre você?!clica em OK!`)
+       window.alert(`Você sabia que a soma do seu nome com a sua idade é de ${somaNoId} ?` )
+       document.write(`Parabéns ${nome}!!! <br/> Segundo os meus cálculos você vai bater as botas com ${death} anos !`)
+    
+    </script>
+    </h2>
+</body>
+</html>
